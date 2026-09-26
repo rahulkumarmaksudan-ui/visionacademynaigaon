@@ -1,0 +1,3293 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vision Academy | Naigaon East</title>
+
+<style>
+
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+:root{
+    --purple:#6a1b9a;
+    --dark-purple:#3b0a57;
+    --purple2:#8e24aa;
+    --light-purple:#f3e8ff;
+    --pink:#e91e63;
+    --gold:#ffd54f;
+    --white:#ffffff;
+    --text:#222;
+    --light:#f8f7fb;
+    --green:#16a34a;
+    --blue:#0756a8;
+    --light-blue:#eaf4ff;
+}
+
+body{
+    background:var(--light);
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#fff;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
+}
+
+.navbar{
+    max-width:1250px;
+    margin:auto;
+    padding:10px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-area img{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    border-radius:12px;
+}
+
+.logo-text h2{
+    color:var(--purple);
+    font-size:23px;
+}
+
+.logo-text span{
+    color:var(--pink);
+    font-size:11px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:18px;
+}
+
+nav a{
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--purple);
+}
+
+.nav-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.nav-btn{
+    padding:9px 14px;
+    border-radius:25px;
+    color:white;
+    font-weight:bold;
+}
+
+.call-btn{
+    background:var(--purple);
+}
+
+.whatsapp-btn{
+    background:var(--green);
+}
+
+
+/* =========================
+   MARQUEE
+========================= */
+
+.marquee{
+    background:var(--dark-purple);
+    color:white;
+    padding:9px 0;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.marquee-text{
+    display:inline-block;
+    font-weight:bold;
+    animation:scrollText 20s linear infinite;
+}
+
+@keyframes scrollText{
+    0%{
+        transform:translateX(100%);
+    }
+
+    100%{
+        transform:translateX(-100%);
+    }
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:700px;
+    display:flex;
+    align-items:center;
+    padding:70px 20px;
+    color:white;
+
+    background:
+    radial-gradient(
+        circle at 85% 20%,
+        rgba(255,255,255,.12),
+        transparent 25%
+    ),
+    linear-gradient(
+        135deg,
+        #260038 0%,
+        #4a0870 35%,
+        #6a1b9a 65%,
+        #8e24aa 100%
+    );
+}
+
+.hero-container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+
+    gap:55px;
+    align-items:center;
+}
+
+.hero-logo{
+    width:175px;
+    height:175px;
+
+    object-fit:contain;
+
+    background:white;
+    padding:12px;
+
+    border-radius:28px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.4);
+
+    margin-bottom:25px;
+}
+
+.hero-content h1{
+    font-size:53px;
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.hero-content h1 span{
+    color:var(--gold);
+}
+
+.hero-content h3{
+    color:var(--gold);
+    font-size:25px;
+    margin-bottom:18px;
+}
+
+.hero-message{
+    max-width:650px;
+    font-size:18px;
+    color:#f6edff;
+    margin-bottom:13px;
+}
+
+.hero-message strong{
+    color:#fff;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:25px;
+}
+
+.hero-btn{
+    padding:14px 23px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+}
+
+.admission-btn{
+    background:var(--gold);
+    color:#321044;
+}
+
+.hero-whatsapp{
+    background:var(--green);
+    color:white;
+}
+
+.hero-call{
+    background:white;
+    color:var(--purple);
+}
+
+.admission-box{
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    padding:35px;
+
+    border-radius:28px;
+
+    backdrop-filter:blur(8px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.3);
+}
+
+.admission-box h2{
+    color:var(--gold);
+    font-size:33px;
+    margin-bottom:8px;
+}
+
+.admission-list{
+    list-style:none;
+    margin-top:18px;
+}
+
+.admission-list li{
+    padding:8px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+section{
+    padding:75px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    color:var(--purple);
+    font-size:38px;
+}
+
+.section-title p{
+    color:#666;
+    margin-top:7px;
+}
+
+
+/* =========================
+   COURSES
+========================= */
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.course-card{
+    background:white;
+
+    padding:28px 20px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    border-top:5px solid var(--purple);
+
+    box-shadow:0 6px 22px rgba(80,20,100,.1);
+
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 14px 30px rgba(80,20,100,.18);
+}
+
+.course-card h3{
+    color:var(--purple);
+    margin-bottom:10px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    background:var(--light-purple);
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+.about-box{
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 7px 25px rgba(80,20,100,.1);
+}
+
+.about-box h3{
+    color:var(--purple);
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.highlight{
+    color:var(--pink);
+    font-weight:bold;
+}
+
+
+/* =========================
+   RESULTS
+========================= */
+
+.results{
+    background:
+    linear-gradient(
+        135deg,
+        #3b0a57,
+        #6a1b9a,
+        #8e24aa
+    );
+
+    color:white;
+}
+
+.results .section-title h2{
+    color:white;
+}
+
+.results .section-title p{
+    color:#f0ddff;
+}
+
+.result-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.result-card{
+    background:white;
+    color:#222;
+
+    padding:25px 18px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.2);
+}
+
+.result-percent{
+    font-size:38px;
+    font-weight:bold;
+    color:var(--pink);
+}
+
+.result-card h3{
+    color:var(--purple);
+    margin:5px 0;
+}
+
+
+/* =========================
+   RESULT IMAGE
+========================= */
+
+.result-image-section{
+    background:#fff;
+}
+
+.result-image-box{
+    max-width:950px;
+    margin:auto;
+
+    padding:18px;
+
+    background:white;
+
+    border:4px solid var(--purple);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 12px 35px rgba(80,20,100,.18);
+}
+
+.result-image-box img{
+    width:100%;
+    display:block;
+    border-radius:15px;
+}
+
+
+/* =========================
+   RESULT TABLE
+========================= */
+
+.result-table-wrapper{
+    overflow-x:auto;
+}
+
+.result-table{
+    width:100%;
+    border-collapse:collapse;
+
+    background:white;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+}
+
+.result-table th{
+    background:var(--purple);
+    color:white;
+    padding:15px;
+}
+
+.result-table td{
+    padding:13px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.result-table tr:nth-child(even){
+    background:var(--light-purple);
+}
+
+
+/* =========================
+   FACULTY SECTION
+========================= */
+
+.faculty{
+    background:#eef7ff;
+}
+
+/* BLUE FRAME SAME SIZE AS IMAGE */
+
+.faculty-photo-frame{
+    width:100%;
+
+    margin:0 auto 45px;
+
+    padding:10px;
+
+    background:#0756a8;
+
+    border:6px solid #0756a8;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 10px 30px rgba(0,60,130,.25);
+
+    overflow:hidden;
+}
+
+.faculty-photo-frame img{
+    display:block;
+
+    width:100%;
+    height:auto;
+
+    object-fit:contain;
+
+    object-position:center;
+
+    background:white;
+
+    border-radius:8px;
+}
+
+.faculty-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.faculty-card{
+    background:white;
+
+    padding:28px 22px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    border-bottom:4px solid var(--blue);
+
+    box-shadow:
+    0 6px 22px rgba(70,10,90,.1);
+}
+
+.faculty-card h3{
+    color:var(--purple);
+    margin-bottom:8px;
+}
+
+.qualification{
+    color:var(--pink);
+    font-weight:bold;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why{
+    background:var(--light-purple);
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.why-card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 5px 20px rgba(70,10,90,.08);
+}
+
+.why-card h3{
+    color:var(--purple);
+    margin-bottom:10px;
+}
+
+
+/* =========================
+   GOOGLE REVIEWS
+========================= */
+
+.google-reviews{
+    background:#f7f9ff;
+}
+
+.google-rating-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+.google-card{
+    background:white;
+
+    padding:35px 28px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    border:2px solid #e1e8f5;
+
+    box-shadow:
+    0 8px 25px rgba(20,60,120,.10);
+
+    transition:.3s;
+}
+
+.google-card:hover{
+    transform:translateY(-5px);
+}
+
+.google-icon{
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.google-card h3{
+    color:var(--purple);
+    font-size:23px;
+    margin-bottom:8px;
+}
+
+.rating-number{
+    font-size:44px;
+    font-weight:bold;
+    color:#e5a400;
+    line-height:1;
+}
+
+.stars{
+    color:#f4b400;
+    font-size:28px;
+    letter-spacing:2px;
+    margin:8px 0;
+}
+
+.rating-note{
+    color:#666;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.review-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.google-review-btn{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:12px 18px;
+
+    border-radius:25px;
+
+    background:#4285f4;
+
+    color:white;
+
+    font-weight:bold;
+}
+
+.write-review-btn{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:12px 18px;
+
+    border-radius:25px;
+
+    background:var(--green);
+
+    color:white;
+
+    font-weight:bold;
+}
+
+.google-disclaimer{
+    text-align:center;
+
+    max-width:800px;
+
+    margin:25px auto 0;
+
+    font-size:13px;
+
+    color:#666;
+}
+
+
+/* =========================
+   BRANCHES
+========================= */
+
+.map-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.map-card{
+    background:white;
+
+    padding:18px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 7px 25px rgba(70,10,90,.1);
+}
+
+.map-card h3{
+    color:var(--purple);
+    margin-bottom:8px;
+}
+
+.map-card iframe{
+    width:100%;
+    height:310px;
+
+    border:0;
+
+    border-radius:14px;
+
+    margin-top:15px;
+}
+
+
+/* =========================
+   ENQUIRY
+========================= */
+
+.enquiry{
+    background:
+    linear-gradient(
+        135deg,
+        #3b0a57,
+        #6a1b9a
+    );
+}
+
+.form{
+    max-width:850px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:22px;
+}
+
+.form-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+}
+
+.form input,
+.form select,
+.form textarea{
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:9px;
+
+    font-size:15px;
+}
+
+.form textarea{
+    height:110px;
+
+    resize:none;
+}
+
+.full{
+    grid-column:1/-1;
+}
+
+.submit-btn{
+    border:0;
+
+    background:var(--green);
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#22002f;
+
+    color:white;
+
+    padding:45px 20px 20px;
+}
+
+.footer-grid{
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:30px;
+}
+
+footer h3{
+    color:var(--gold);
+    margin-bottom:12px;
+}
+
+footer a{
+    color:white;
+}
+
+.copyright{
+    text-align:center;
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:
+    1px solid rgba(255,255,255,.2);
+
+    color:#ccc;
+}
+
+
+/* =========================
+   FLOATING BUTTONS
+========================= */
+
+.float-buttons{
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:1500;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+.float-btn{
+    width:54px;
+    height:54px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-size:21px;
+
+    box-shadow:
+    0 6px 18px rgba(0,0,0,.25);
+}
+
+.float-wa{
+    background:var(--green);
+}
+
+.float-call{
+    background:var(--purple);
+}
+
+
+/* =========================
+   SMALL ADMISSION POPUP
+========================= */
+
+.popup-overlay{
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(25,0,35,.70);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px;
+
+    z-index:5000;
+}
+
+.popup{
+    width:100%;
+
+    max-width:390px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45);
+
+    animation:
+    popupAnimation .45s ease;
+}
+
+@keyframes popupAnimation{
+
+    from{
+        transform:scale(.75);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+.popup-top{
+
+    background:
+    linear-gradient(
+        135deg,
+        #3b0a57,
+        #6a1b9a,
+        #8e24aa
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:18px 15px;
+}
+
+.popup-logo{
+    width:58px;
+    height:58px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:5px;
+
+    border-radius:12px;
+
+    margin-bottom:5px;
+}
+
+.popup-top h2{
+    font-size:23px;
+
+    color:var(--gold);
+}
+
+.popup-top p{
+    font-size:14px;
+}
+
+.popup-body{
+
+    padding:20px;
+
+    text-align:center;
+}
+
+.popup-body h3{
+
+    color:var(--purple);
+
+    font-size:18px;
+
+    margin-bottom:6px;
+}
+
+.popup-body p{
+
+    font-size:14px;
+}
+
+.popup-highlight{
+
+    margin:12px 0;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    background:var(--light-purple);
+
+    color:var(--purple);
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    border-left:
+    4px solid var(--pink);
+}
+
+.popup-free{
+
+    color:var(--pink);
+
+    font-size:16px !important;
+
+    font-weight:bold;
+}
+
+.popup-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    margin-top:13px;
+}
+
+.popup-buttons a{
+
+    padding:10px 12px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:bold;
+}
+
+.popup-whatsapp{
+
+    background:var(--green);
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:7px;
+}
+
+.popup-call{
+
+    background:var(--purple);
+
+    color:white;
+}
+
+.whatsapp-icon{
+
+    width:22px;
+
+    height:22px;
+
+    background:white;
+
+    color:var(--green);
+
+    border-radius:50%;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:14px;
+
+    font-weight:bold;
+}
+
+.close-popup{
+
+    position:absolute;
+
+    top:8px;
+
+    right:9px;
+
+    width:30px;
+
+    height:30px;
+
+    border:0;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#333;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    z-index:5;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1050px){
+
+    nav{
+        display:none;
+    }
+
+    .course-grid,
+    .result-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .faculty-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+
+    .hero{
+
+        padding:50px 20px;
+    }
+
+    .hero-container,
+    .about-grid,
+    .map-grid,
+    .google-rating-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero-content{
+
+        text-align:center;
+    }
+
+    .hero-logo{
+
+        width:145px;
+        height:145px;
+    }
+
+    .hero-content h1{
+
+        font-size:39px;
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+    }
+
+    .course-grid,
+    .result-grid,
+    .faculty-grid,
+    .why-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .full{
+
+        grid-column:auto;
+    }
+
+    .nav-buttons{
+
+        display:none;
+    }
+
+    .faculty-photo-frame{
+
+        padding:6px;
+
+        border-width:4px;
+
+        border-radius:14px;
+    }
+
+    .popup{
+
+        max-width:350px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .logo-area img{
+
+        width:52px;
+        height:52px;
+    }
+
+    .logo-text h2{
+
+        font-size:18px;
+    }
+
+    .hero-content h1{
+
+        font-size:34px;
+    }
+
+    .hero-content h3{
+
+        font-size:21px;
+    }
+
+    .hero-message{
+
+        font-size:16px;
+    }
+
+    .popup{
+
+        max-width:330px;
+    }
+
+    .popup-body{
+
+        padding:16px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo-area">
+
+<img
+src="file:///C:/Users/ADMIN/Downloads/institue%20logo.jpeg"
+alt="Vision Academy Logo"
+>
+
+<div class="logo-text">
+
+<h2>Vision Academy</h2>
+
+<span>WE BELIEVE IN QUALITY</span>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#courses">Courses</a>
+
+<a href="#about">About</a>
+
+<a href="#results">Results</a>
+
+<a href="#faculty">Faculty</a>
+
+<a href="#reviews">Reviews</a>
+
+<a href="#branches">Branches</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+<div class="nav-buttons">
+
+<a
+class="nav-btn call-btn"
+href="tel:+918080709772"
+>
+Call
+</a>
+
+<a
+class="nav-btn whatsapp-btn"
+href="https://wa.me/918080709772?text=Hello%20Vision%20Academy,%20I%20want%20information%20about%20admission%202026-27."
+target="_blank"
+>
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     MARQUEE
+========================= -->
+
+<div class="marquee">
+
+<div class="marquee-text">
+
+ADMISSION OPEN 2026–2027 ★
+LIMITED SEATS AVAILABLE ★
+BOOK YOUR 15 DAYS FREE DEMO LECTURES ★
+SSC • CBSE • SCIENCE • COMMERCE • JEE • NEET • MHT-CET • CA FOUNDATION
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-container">
+
+
+<div class="hero-content">
+
+<img
+class="hero-logo"
+src="file:///C:/Users/ADMIN/Downloads/institue%20logo.jpeg"
+alt="Vision Academy Logo"
+>
+
+<h1>
+Welcome to
+<span>Vision Academy</span>
+</h1>
+
+<h3>
+WE BELIEVE IN QUALITY
+</h3>
+
+<p class="hero-message">
+
+Vision Academy is committed to creating a focused learning environment where students develop strong concepts, academic discipline and confidence.
+
+</p>
+
+<p class="hero-message">
+
+<strong>
+Admissions are now open for 2026–2027.
+</strong>
+
+Start your academic journey with structured teaching, regular practice, doubt solving and personal guidance.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="#contact"
+class="hero-btn admission-btn"
+>
+Admission Open 2026–27
+</a>
+
+<a
+href="https://wa.me/918080709772?text=Hello%20Vision%20Academy,%20I%20want%20to%20book%20a%2015%20days%20free%20demo%20for%202026-27."
+target="_blank"
+class="hero-btn hero-whatsapp"
+>
+💬 WhatsApp Us
+</a>
+
+<a
+href="tel:+918080709772"
+class="hero-btn hero-call"
+>
+📞 Call Now
+</a>
+
+</div>
+
+</div>
+
+
+<div class="admission-box">
+
+<h2>
+Admissions Open
+</h2>
+
+<p>
+<strong>
+Academic Year 2026–2027
+</strong>
+</p>
+
+<ul class="admission-list">
+
+<li>✓ SSC – Classes 8th, 9th & 10th</li>
+
+<li>✓ CBSE – Classes 8th, 9th & 10th</li>
+
+<li>✓ 11th & 12th Science</li>
+
+<li>✓ 11th & 12th Commerce</li>
+
+<li>✓ JEE Preparation</li>
+
+<li>✓ NEET Preparation</li>
+
+<li>✓ MHT-CET / CET</li>
+
+<li>✓ CA Foundation</li>
+
+<li>✓ Board Examination Preparation</li>
+
+</ul>
+
+<br>
+
+<p>
+
+<strong>
+Special Opportunity
+</strong>
+
+<br>
+
+Book your
+
+<span
+style="color:#ffd54f;font-weight:bold"
+>
+15 Days FREE Demo Lectures
+</span>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     COURSES
+========================= -->
+
+<section id="courses">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Courses</h2>
+
+<p>
+Academic and competitive examination preparation.
+</p>
+
+</div>
+
+
+<div class="course-grid">
+
+
+<div class="course-card">
+
+<h3>SSC</h3>
+
+<p>
+Classes 8th, 9th and 10th with conceptual and board-focused preparation.
+</p>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>CBSE</h3>
+
+<p>
+Concept-based academic support for CBSE students.
+</p>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>11th–12th Science</h3>
+
+<p>
+Focused preparation for Physics, Chemistry, Mathematics and Biology.
+</p>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>11th–12th Commerce</h3>
+
+<p>
+Accountancy, Economics, Business Studies and related subjects.
+</p>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>JEE</h3>
+
+<p>
+Problem solving and conceptual preparation for engineering entrance.
+</p>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>NEET</h3>
+
+<p>
+Science-oriented preparation for medical entrance examinations.
+</p>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>MHT-CET</h3>
+
+<p>
+CET-focused practice and examination preparation.
+</p>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>CA Foundation</h3>
+
+<p>
+Foundation-level academic support for aspiring CA students.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+About Vision Academy
+</h2>
+
+<p>
+Learning with purpose. Preparing for the future.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+
+<div class="about-box">
+
+<h3>
+Our Vision
+</h3>
+
+<p>
+Vision Academy focuses on creating a learning environment where students understand concepts instead of simply memorising answers.
+</p>
+
+<p>
+Our approach combines classroom learning, regular practice, academic testing and doubt solving.
+</p>
+
+<p>
+We believe in
+<span class="highlight">
+quality teaching, consistent practice and student effort.
+</span>
+</p>
+
+</div>
+
+
+<div class="about-box">
+
+<h3>
+Our Academic Focus
+</h3>
+
+<p>✓ Concept-oriented teaching</p>
+
+<p>✓ Regular academic practice</p>
+
+<p>✓ Doubt-solving support</p>
+
+<p>✓ Board examination preparation</p>
+
+<p>✓ Science & Commerce guidance</p>
+
+<p>✓ Competitive examination preparation</p>
+
+<p>✓ Personal academic attention</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     RESULTS
+========================= -->
+
+<section class="results" id="results">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Vision Academy Results
+</h2>
+
+<p>
+Celebrating student achievements.
+</p>
+
+</div>
+
+
+<div class="result-grid">
+
+
+<div class="result-card">
+
+<div class="result-percent">
+95%
+</div>
+
+<h3>
+Satyam Ojha
+</h3>
+
+<p>
+SSC Topper
+</p>
+
+<small>
+Girija Mhatre High School
+</small>
+
+</div>
+
+
+<div class="result-card">
+
+<div class="result-percent">
+94%
+</div>
+
+<h3>
+Jeevan Maali
+</h3>
+
+<p>
+CBSE Topper
+</p>
+
+<small>
+Seven Square Academy
+</small>
+
+</div>
+
+
+<div class="result-card">
+
+<div class="result-percent">
+90%
+</div>
+
+<h3>
+Nirmiti Bhoir
+</h3>
+
+<p>
+12th Commerce Topper
+</p>
+
+<small>
+Vartak College
+</small>
+
+</div>
+
+
+<div class="result-card">
+
+<div class="result-percent">
+88%
+</div>
+
+<h3>
+Deep Tripathi
+</h3>
+
+<p>
+12th Science Topper
+</p>
+
+<small>
+Don Bosco School & Junior College
+</small>
+
+<br>
+
+<strong>
+Mathematics: 98/100
+</strong>
+
+</div>
+
+
+</div>
+
+
+<br><br>
+
+
+<div class="result-grid">
+
+
+<div class="result-card">
+
+<div class="result-percent">
+92.20%
+</div>
+
+<h3>
+Manish Sharma
+</h3>
+
+<small>
+Girija Mhatre High School
+</small>
+
+</div>
+
+
+<div class="result-card">
+
+<div class="result-percent">
+92%
+</div>
+
+<h3>
+Shreya Mishra
+</h3>
+
+<small>
+Rashmi International School
+</small>
+
+</div>
+
+
+<div class="result-card">
+
+<div class="result-percent">
+92%
+</div>
+
+<h3>
+Sidhant Gupta
+</h3>
+
+<small>
+Seven Square Academy
+</small>
+
+</div>
+
+
+<div class="result-card">
+
+<div class="result-percent">
+90.20%
+</div>
+
+<h3>
+Ankush Singh
+</h3>
+
+<small>
+Our Lady of Vailankanni School
+</small>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     RESULT IMAGE
+========================= -->
+
+<section class="result-image-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Result Highlights
+</h2>
+
+<p>
+Vision Academy student achievement highlights.
+</p>
+
+</div>
+
+
+<div class="result-image-box">
+
+<img
+src="file:///C:/Users/ADMIN/Downloads/result.jpeg"
+alt="Vision Academy Results"
+>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PREVIOUS RESULTS
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Previous Year Results
+</h2>
+
+<p>
+Selected student achievements.
+</p>
+
+</div>
+
+
+<div class="result-table-wrapper">
+
+<table class="result-table">
+
+<tr>
+
+<th>
+Student
+</th>
+
+<th>
+Percentage
+</th>
+
+<th>
+School
+</th>
+
+</tr>
+
+
+<tr>
+
+<td>
+Atharv Pandey
+</td>
+
+<td>
+96%
+</td>
+
+<td>
+Girija Mhatre School
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Anurag Yadav
+</td>
+
+<td>
+94%
+</td>
+
+<td>
+Seven Square Academy
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Riya Tiwari
+</td>
+
+<td>
+93%
+</td>
+
+<td>
+Girija Mhatre School
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Shreehan Tavde
+</td>
+
+<td>
+91%
+</td>
+
+<td>
+Girija Mhatre School
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Rahul Yadav
+</td>
+
+<td>
+90%
+</td>
+
+<td>
+St. Francis Xavier's
+</td>
+
+</tr>
+
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FACULTY
+========================= -->
+
+<section class="faculty" id="faculty">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Our Faculty
+</h2>
+
+<p>
+Experienced educators focused on quality academic guidance.
+</p>
+
+</div>
+
+
+<!-- FULL WIDTH BLUE IMAGE FRAME -->
+
+<div class="faculty-photo-frame">
+
+<img
+src="file:///C:/Users/ADMIN/Downloads/faculty.jpeg"
+alt="Vision Academy Faculty"
+>
+
+</div>
+
+
+<div class="faculty-grid">
+
+
+<div class="faculty-card">
+
+<h3>
+Prabhat Yadav
+</h3>
+
+<div class="qualification">
+MSc Applied Statistics & Analytics
+</div>
+
+<p>
+NMIMS – Mumbai
+</p>
+
+<p>
+Cleared Indian Army & Indian Navy Examination
+</p>
+
+<p>
+8+ Years Teaching Experience
+</p>
+
+</div>
+
+
+<div class="faculty-card">
+
+<h3>
+Rajendra Agarwal
+</h3>
+
+<div class="qualification">
+PhD – Pharmacy
+</div>
+
+<p>
+38 Years Teaching Experience
+</p>
+
+</div>
+
+
+<div class="faculty-card">
+
+<h3>
+Sneha Nair
+</h3>
+
+<div class="qualification">
+M.Com – Mumbai University
+</div>
+
+<p>
+Working in Bank of America
+</p>
+
+<p>
+8+ Years Teaching Experience
+</p>
+
+</div>
+
+
+<div class="faculty-card">
+
+<h3>
+Shivam Jha
+</h3>
+
+<div class="qualification">
+BSc Microbiology
+</div>
+
+<p>
+5+ Years Teaching Experience
+</p>
+
+</div>
+
+
+<div class="faculty-card">
+
+<h3>
+Roshni Yadav
+</h3>
+
+<div class="qualification">
+B.Pharmacy – Mumbai University
+</div>
+
+<p>
+CET Score – 99.14%ile
+</p>
+
+</div>
+
+
+<div class="faculty-card">
+
+<h3>
+Himanshu Chaubey
+</h3>
+
+<div class="qualification">
+MSc Organic Chemistry
+</div>
+
+<p>
+Mumbai University
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     WHY US
+========================= -->
+
+<section class="why">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Why Vision Academy?
+</h2>
+
+<p>
+A focused learning environment designed around student progress.
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<h3>
+Conceptual Learning
+</h3>
+
+<p>
+Students are encouraged to understand concepts and apply their knowledge.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<h3>
+Regular Practice
+</h3>
+
+<p>
+Assignments, practice sessions and tests help students maintain consistency.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<h3>
+Personal Attention
+</h3>
+
+<p>
+Academic guidance and support based on student requirements.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<h3>
+Board Preparation
+</h3>
+
+<p>
+Structured preparation for school and board examinations.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<h3>
+Competitive Preparation
+</h3>
+
+<p>
+Preparation support for JEE, NEET and MHT-CET aspirants.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<h3>
+Quality Teaching
+</h3>
+
+<p>
+Our philosophy:
+<strong>
+We Believe in Quality.
+</strong>
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     GOOGLE RATINGS & REVIEWS
+========================= -->
+
+<section
+class="google-reviews"
+id="reviews"
+>
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Google Ratings & Reviews
+</h2>
+
+<p>
+Check the latest reviews and share your experience with Vision Academy.
+</p>
+
+</div>
+
+
+<div class="google-rating-grid">
+
+
+<!-- MAIN BRANCH -->
+
+<div class="google-card">
+
+<div class="google-icon">
+📍
+</div>
+
+<h3>
+Main Branch
+</h3>
+
+<p>
+Shop No. 15, Building No. C3,
+Rashmi StarCity,
+Naigaon East
+</p>
+
+
+<div class="rating-number">
+4.9
+</div>
+
+<div class="stars">
+★★★★★
+</div>
+
+<p class="rating-note">
+4.9/5 online rating • 41 ratings currently listed
+</p>
+
+
+<div class="review-buttons">
+
+
+<a
+class="google-review-btn"
+href="https://www.google.com/maps/search/?api=1&query=Vision+Academy+Shop+15+Rashmi+StarCity+Naigaon+East"
+target="_blank"
+>
+🔎 View Google Reviews
+</a>
+
+
+<a
+class="write-review-btn"
+href="https://www.google.com/maps/search/?api=1&query=Vision+Academy+Shop+15+Rashmi+StarCity+Naigaon+East"
+target="_blank"
+>
+✍️ Write a Review
+</a>
+
+
+</div>
+
+</div>
+
+
+<!-- SECOND BRANCH -->
+
+<div class="google-card">
+
+<div class="google-icon">
+📍
+</div>
+
+<h3>
+Second Branch
+</h3>
+
+<p>
+2nd Floor,
+ZM Arcade,
+Opp. Don Bosco School,
+Naigaon East
+</p>
+
+
+<div class="rating-number">
+★
+</div>
+
+<div class="stars">
+★★★★★
+</div>
+
+<p class="rating-note">
+Open Google Maps to view the latest branch rating and reviews.
+</p>
+
+
+<div class="review-buttons">
+
+
+<a
+class="google-review-btn"
+href="https://www.google.com/maps/search/?api=1&query=Vision+Academy+ZM+Arcade+Opposite+Don+Bosco+School+Naigaon+East"
+target="_blank"
+>
+🔎 View Google Reviews
+</a>
+
+
+<a
+class="write-review-btn"
+href="https://www.google.com/maps/search/?api=1&query=Vision+Academy+ZM+Arcade+Opposite+Don+Bosco+School+Naigaon+East"
+target="_blank"
+>
+✍️ Write a Review
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<p class="google-disclaimer">
+
+Ratings and review counts can change as Google updates its listings.
+Use the buttons above to see the latest information directly on Google Maps.
+
+</p>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     BRANCHES
+========================= -->
+
+<section id="branches">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Our Branches
+</h2>
+
+<p>
+Visit Vision Academy at our Naigaon East locations.
+</p>
+
+</div>
+
+
+<div class="map-grid">
+
+
+<div class="map-card">
+
+<h3>
+Main Branch
+</h3>
+
+<p>
+Shop No. 15, Building No. C3,
+Rashmi StarCity,
+Juchandra Road,
+Naigaon East,
+Vasai-Virar,
+Maharashtra 401208.
+</p>
+
+
+<iframe
+src="https://www.google.com/maps?q=Shop+No+15+Building+C3+Rashmi+StarCity+Naigaon+East&output=embed"
+loading="lazy"
+>
+</iframe>
+
+</div>
+
+
+<div class="map-card">
+
+<h3>
+Second Branch
+</h3>
+
+<p>
+2nd Floor,
+ZM Arcade,
+Opp. Don Bosco School,
+Naigaon East,
+Maharashtra.
+</p>
+
+
+<iframe
+src="https://www.google.com/maps?q=ZM+Arcade+Opp+Don+Bosco+School+Naigaon+East&output=embed"
+loading="lazy"
+>
+</iframe>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ADMISSION ENQUIRY
+========================= -->
+
+<section
+class="enquiry"
+id="contact"
+>
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2 style="color:white;">
+Admission Enquiry
+</h2>
+
+<p style="color:#eadcff;">
+Send your enquiry directly to Vision Academy on WhatsApp.
+</p>
+
+</div>
+
+
+<form
+class="form"
+id="enquiryForm"
+>
+
+
+<div class="form-grid">
+
+
+<input
+type="text"
+id="studentName"
+placeholder="Student Name"
+required
+>
+
+
+<input
+type="text"
+id="parentName"
+placeholder="Parent Name"
+required
+>
+
+
+<input
+type="tel"
+id="mobile"
+placeholder="Mobile Number"
+required
+>
+
+
+<select
+id="className"
+required
+>
+
+<option value="">
+Select Class
+</option>
+
+<option>8th</option>
+
+<option>9th</option>
+
+<option>10th</option>
+
+<option>11th Science</option>
+
+<option>11th Commerce</option>
+
+<option>12th Science</option>
+
+<option>12th Commerce</option>
+
+</select>
+
+
+<select
+id="course"
+required
+>
+
+<option value="">
+Select Course
+</option>
+
+<option>SSC</option>
+
+<option>CBSE</option>
+
+<option>Science</option>
+
+<option>Commerce</option>
+
+<option>JEE</option>
+
+<option>NEET</option>
+
+<option>MHT-CET</option>
+
+<option>CA Foundation</option>
+
+</select>
+
+
+<select
+id="branch"
+required
+>
+
+<option value="">
+Select Branch
+</option>
+
+<option>
+Main Branch – Rashmi StarCity
+</option>
+
+<option>
+Second Branch – ZM Arcade
+</option>
+
+</select>
+
+
+<textarea
+class="full"
+id="message"
+placeholder="Your Message / Requirement"
+></textarea>
+
+
+<div
+class="full"
+style="text-align:center;"
+>
+
+<button
+type="submit"
+class="submit-btn"
+>
+💬 Send Enquiry on WhatsApp
+</button>
+
+</div>
+
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+Vision Academy
+</h3>
+
+<p>
+We Believe in Quality.
+</p>
+
+<p>
+Quality education, conceptual learning and focused academic preparation.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<p>
+<a href="#home">
+Home
+</a>
+</p>
+
+<p>
+<a href="#courses">
+Courses
+</a>
+</p>
+
+<p>
+<a href="#results">
+Results
+</a>
+</p>
+
+<p>
+<a href="#faculty">
+Faculty
+</a>
+</p>
+
+<p>
+<a href="#reviews">
+Google Reviews
+</a>
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Contact
+</h3>
+
+<p>
+📞
+<a href="tel:+918080709772">
+8080709772
+</a>
+</p>
+
+<p>
+📞
+<a href="tel:+918369854884">
+8369854884
+</a>
+</p>
+
+<p>
+💬
+<a
+href="https://wa.me/918080709772"
+target="_blank"
+>
+WhatsApp
+</a>
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Vision Academy.
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     FLOATING BUTTONS
+========================= -->
+
+<div class="float-buttons">
+
+
+<a
+class="float-btn float-wa"
+href="https://wa.me/918080709772?text=Hello%20Vision%20Academy,%20I%20want%20information%20about%20admission%202026-27."
+target="_blank"
+title="WhatsApp"
+>
+💬
+</a>
+
+
+<a
+class="float-btn float-call"
+href="tel:+918080709772"
+title="Call"
+>
+☎
+</a>
+
+
+</div>
+
+
+<!-- =========================
+     SMALL ADMISSION POPUP
+========================= -->
+
+<div
+class="popup-overlay"
+id="admissionPopup"
+>
+
+<div class="popup">
+
+
+<button
+class="close-popup"
+onclick="closePopup()"
+>
+×
+</button>
+
+
+<div class="popup-top">
+
+
+<img
+class="popup-logo"
+src="file:///C:/Users/ADMIN/Downloads/institue%20logo.jpeg"
+alt="Vision Academy Logo"
+>
+
+
+<h2>
+ADMISSION OPEN
+</h2>
+
+
+<p>
+2026 – 2027 BATCHES
+</p>
+
+
+</div>
+
+
+<div class="popup-body">
+
+
+<h3>
+Start Your Academic Journey
+</h3>
+
+
+<p>
+Admissions are open for the
+<strong>
+2026–2027
+</strong>
+academic year.
+</p>
+
+
+<div class="popup-highlight">
+
+🎓 SSC & CBSE
+
+<br>
+
+🎓 11th & 12th Science
+
+<br>
+
+🎓 11th & 12th Commerce
+
+<br>
+
+🎓 JEE • NEET • MHT-CET • CA Foundation
+
+</div>
+
+
+<p class="popup-free">
+
+🎁 BOOK YOUR 15 DAYS FREE DEMO
+
+</p>
+
+
+<div class="popup-buttons">
+
+
+<a
+class="popup-whatsapp"
+href="https://wa.me/918080709772?text=Hello%20Vision%20Academy,%20I%20want%20to%20book%20the%2015%20days%20free%20demo%20for%20the%202026-27%20batch."
+target="_blank"
+>
+
+<span class="whatsapp-icon">
+●
+</span>
+
+BOOK FREE DEMO ON WHATSAPP
+
+</a>
+
+
+<a
+class="popup-call"
+href="tel:+918080709772"
+>
+
+📞
+CALL FOR ADMISSION
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+/* =========================
+   POPUP
+========================= */
+
+window.addEventListener(
+"load",
+function(){
+
+    setTimeout(
+    function(){
+
+        document
+        .getElementById("admissionPopup")
+        .style.display="flex";
+
+    },
+    700
+    );
+
+});
+
+
+function closePopup(){
+
+    document
+    .getElementById("admissionPopup")
+    .style.display="none";
+
+}
+
+
+document
+.getElementById("admissionPopup")
+.addEventListener(
+"click",
+function(e){
+
+    if(e.target===this){
+
+        closePopup();
+
+    }
+
+});
+
+
+/* =========================
+   WHATSAPP ENQUIRY
+========================= */
+
+document
+.getElementById("enquiryForm")
+.addEventListener(
+"submit",
+function(e){
+
+    e.preventDefault();
+
+
+    const student=
+    document
+    .getElementById("studentName")
+    .value;
+
+
+    const parent=
+    document
+    .getElementById("parentName")
+    .value;
+
+
+    const mobile=
+    document
+    .getElementById("mobile")
+    .value;
+
+
+    const className=
+    document
+    .getElementById("className")
+    .value;
+
+
+    const course=
+    document
+    .getElementById("course")
+    .value;
+
+
+    const branch=
+    document
+    .getElementById("branch")
+    .value;
+
+
+    const message=
+    document
+    .getElementById("message")
+    .value;
+
+
+    const whatsappMessage=
+
+`Hello Vision Academy,
+
+I am interested in admission for the 2026–2027 batch.
+
+Student Name: ${student}
+
+Parent Name: ${parent}
+
+Mobile Number: ${mobile}
+
+Class: ${className}
+
+Course: ${course}
+
+Preferred Branch: ${branch}
+
+Message:
+${message}
+
+I would also like information about the 15 Days Free Demo Lectures.`;
+
+
+    const whatsappURL=
+    "https://wa.me/918080709772?text="
+    +
+    encodeURIComponent(whatsappMessage);
+
+
+    window.open(
+    whatsappURL,
+    "_blank"
+    );
+
+});
+
+
+/* =========================
+   SMOOTH NAVIGATION
+========================= */
+
+document
+.querySelectorAll('a[href^="#"]')
+.forEach(
+function(anchor){
+
+    anchor.addEventListener(
+    "click",
+    function(e){
+
+        const target=
+        document.querySelector(
+        this.getAttribute("href")
+        );
+
+
+        if(target){
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+                behavior:"smooth"
+            });
+
+        }
+
+    });
+
+});
+
+
+</script>
+
+
+</body>
+</html>
+
